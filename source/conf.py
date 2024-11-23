@@ -6,10 +6,12 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Bank of Test'
+project = '帮客题库'
 copyright = '2024, bankoftest'
 author = 'bankoftest'
 release = ''
+
+html_title = "帮客题库 Bank of Tests"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

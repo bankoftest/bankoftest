@@ -1,0 +1,51 @@
+.. raw:: html
+
+   <div class="test-name">加拿大BC驾照考试笔试全真模拟题2024版</div>
+
+   <hr>
+
+.. meta::
+   :description: 在 BC 省驾驶的最低跟车距离是多少？
+   :keywords: BC驾照考试, 跟车距离, BC驾驶考试
+
+2
+==
+
+**• 在 BC 省驾驶的最低跟车距离是多少？**
+
+.. image:: /../images/driver_test/ca/bc/2.jpg
+   :width: 80%
+   :alt: Image for the question
+   :align: center
+
+.. raw:: html
+
+   <div id="q2" class="quiz">
+       <div class="option" id="q2-A" onclick="selectOption('q2', 'A', false)">
+           A. 1 秒
+       </div>
+       <div class="option" id="q2-B" onclick="selectOption('q2', 'B', true)">
+           B. 2 秒
+       </div>
+       <div class="option" id="q2-C" onclick="selectOption('q2', 'C', false)">
+           C. 3 秒
+       </div>
+       <div class="option" id="q2-D" onclick="selectOption('q2', 'D', false)">
+           D. 4 秒
+       </div>
+       <p id="q2-result" class="result"></p>
+   </div>
+
+
+.. dropdown:: 点击查看答案解析
+
+   在理想条件下，BC 省驾驶的最低跟车距离是 2 秒。
+
+.. raw:: html
+
+   <div class="nav-buttons">
+       <a href="q1.html" class="button">上一题</a>
+       <span class="page-indicator">2 / 3</span>
+       <a href="q3.html" class="button">下一题</a>
+   </div>
+

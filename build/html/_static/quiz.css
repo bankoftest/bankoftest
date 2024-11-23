@@ -1,0 +1,141 @@
+.quiz .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.quiz .option:hover {
+    background-color: #f0f0f0;
+    border-color: #007bff;
+}
+
+/* Styling for the result message */
+.quiz .result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the result message */
+.result-message {
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 15px; /* Add some space above the message */
+}
+
+
+
+
+
+.prev-next-nav {
+    display: none !important; /* Hides the navigation links */
+}
+
+.wy-nav-content .prev-next-nav {
+    display: none; /* Hides the navigation links */
+}
+
+.prev-next-footer {
+    display: none !important; /* Hide the navigation links */
+}
+
+
+
+
+/* Style for the navigation buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style for the page indicator */
+.page-indicator {
+    font-weight: bold;
+    font-size: 16px;
+    color: #888; /* Grey text color */
+    margin: 0 15px; /* Add space between buttons and indicator */
+    text-align: center;
+    flex: 1; /* Make it take up space between the buttons */
+}
+
+
+.nav-buttons a.button {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav-buttons a.button:hover {
+    background-color: #0056b3;
+}
+
+/* For the first question: center "Next Question" button */
+.nav-buttons.single-next {
+    justify-content: flex-end; /* Push button to the right */
+}
+
+
+/* Add space below images */
+img {
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+    pointer-events: none; /* Make the image unclickable */
+}
+
+
+
+/* Style the content area */
+/* Fixed width for larger screens */
+body .bd-content {
+    width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 850px) {
+    body .bd-content {
+        width: 90%; /* Use a percentage-based width for small screens */
+        margin: 10px auto; /* Adjust margins for smaller screens */
+    }
+}
+
+
+
+h1, .section > .title {
+    display: none !important; /* Hides the title */
+}
+
+.bd-header-article {
+    display: none !important; /* Hides the title */
+}
+
+
+/* Style for the test name */
+.test-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px; 
+    color: #007bff; /* Make it visually distinct */
+}
+
+/* Add right padding to the article content */
+article.bd-article {
+    padding: 20px; /* Adjust the value as needed */
+}
+
