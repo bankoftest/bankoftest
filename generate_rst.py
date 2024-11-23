@@ -4,6 +4,7 @@ import os
 # Paths
 question_file = "questions/driver_test_ca_bc.json"
 output_dir = "source/driver_test/ca/bc"
+image_dir = "../images/driver_test/ca/bc"
 
 # Function to write a single question to an `.rst` file
 def write_question_rst(question, output_dir, total_questions, language):
@@ -35,11 +36,20 @@ def write_question_rst(question, output_dir, total_questions, language):
         # Write question in bold
         f.write(f"**{question['question']}**\n\n")
 
+        # Add image if available
+        if "image" in question:
+            image_path = os.path.join(image_dir, question['image'])
+            f.write(f".. image:: /{image_path}\n")
+            f.write("   :width: 60%\n")
+            f.write("   :alt: Image for the question\n")
+            f.write("   :align: center\n")  # Aligns the image in the center
+            f.write("\n")  # Adds a blank line after the image block
+
         # Write options with interactive buttons
         write_interactive_html(f, question_id, question['options'], question['answer'])
 
         # Write explanation (hidden by default)
-        f.write("\n.. dropdown:: Explanation\n\n")
+        f.write("\n.. dropdown:: 点击查看答案解析\n\n")
         f.write(f"   {question['explanation']}\n")
 
         # Add navigation buttons
@@ -70,13 +80,23 @@ def write_title(file, title):
 # Function to write interactive HTML content
 def write_interactive_html(file, question_id, options, correct_answer):
     file.write(".. raw:: html\n\n")
-    file.write(f"   <div id=\"{question_id}\" class=\"quiz\" data-correct-answer=\"{correct_answer}\">\n")
-    for option in options:
-        file.write(
-            f"       <button onclick=\"checkAnswer('{question_id}', '{option}')\">{option}</button>\n"
-        )
+    file.write(f"   <div id=\"{question_id}\" class=\"quiz\">\n")
+    
+    # Map options to letters (A, B, C, D, ...)
+    letters = ["A", "B", "C", "D", "E", "F", "G", "H"]
+    for i, option in enumerate(options):
+        letter = letters[i]
+        is_correct = "true" if option == correct_answer else "false"
+
+        # HTML for the interactive option
+        file.write(f"       <div class=\"option\" id=\"{question_id}-{letter}\" onclick=\"selectOption('{question_id}', '{letter}', {is_correct})\">\n")
+        file.write(f"           {letter}. {option}\n")
+        file.write("       </div>\n")
+    
     file.write(f"       <p id=\"{question_id}-result\" class=\"result\"></p>\n")
     file.write("   </div>\n\n")
+
+
 
 # Function to update the index.rst file with a toctree
 def update_toctree(title, questions, output_dir):

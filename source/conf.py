@@ -19,6 +19,7 @@ exclude_patterns = []
 
 language = 'zh'
 
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
@@ -35,13 +36,19 @@ html_theme = "pydata_sphinx_theme"
 # Configure theme options
 html_theme_options = {
     "navbar_align": "content",  # Center navigation
-    "show_nav_level": 2,       # Sidebar navigation depth
-    "navigation_depth": 2,     # Controls sidebar navigation depth
-    "logo": {
-        "image_light": "_static/logo_light.png",  # Optional logo
-        "image_dark": "_static/logo_dark.png",    # Optional dark mode logo
+    "show_nav_level": 0,       # Sidebar navigation depth
+    "navigation_depth": 1,     
+    "secondary_sidebar_items": {
+        "driver_test/ca/bc": [],
     },
-    "favicon": "_static/favicon.ico",            # Optional favicon
+    "primary_sidebar_items": {
+        "driver_test/ca/bc": [],
+    },
+    "collapse_navigation": True,
+}
+
+html_sidebars = {
+  "driver_test/ca/bc": [],
 }
 
 # Set paths for custom static files

@@ -1,19 +1,49 @@
-.quiz button {
-    margin: 5px;
+.quiz .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
-.quiz button:hover {
-    background-color: #eee;
+.quiz .option:hover {
+    background-color: #f0f0f0;
+    border-color: #007bff;
 }
 
-.result {
-    margin-top: 10px;
+/* Styling for the result message */
+.quiz .result {
+    margin-top: 15px;
     font-weight: bold;
+    color: #333;
 }
+
+/* Style for the result message */
+.result-message {
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 15px; /* Add some space above the message */
+}
+
+
+
+
+
+.prev-next-nav {
+    display: none !important; /* Hides the navigation links */
+}
+
+.wy-nav-content .prev-next-nav {
+    display: none; /* Hides the navigation links */
+}
+
+.prev-next-footer {
+    display: none !important; /* Hide the navigation links */
+}
+
 
 
 
@@ -42,3 +72,9 @@
     justify-content: flex-end; /* Push button to the right */
 }
 
+
+/* Add space below images */
+img {
+    margin-bottom: 20px; /* Adjust the spacing as needed */
+    pointer-events: none; /* Make the image unclickable */
+}

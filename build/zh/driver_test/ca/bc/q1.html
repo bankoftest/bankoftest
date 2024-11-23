@@ -34,7 +34,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/quiz.css?v=84882548" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/quiz.css?v=1e09e113" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -47,7 +47,7 @@
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'driver_test/ca/bc/q1';</script>
-    <script src="../../../_static/quiz.js?v=b344d5ba"></script>
+    <script src="../../../_static/quiz.js?v=8c9df3ca"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
     <link rel="next" title="2" href="q2.html" />
@@ -115,14 +115,8 @@
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../../_static/logo_light.png" class="logo__image only-light" alt="Bank Of Test 1.0 文档 - Home"/>
-    <img src="../../../_static/logo_dark.png" class="logo__image only-dark pst-js-only" alt="Bank Of Test 1.0 文档 - Home"/>
   
+    <p class="title logo__title">Bank Of Test 1.0 文档</p>
   
 </a></div>
     
@@ -184,10 +178,6 @@
     </div>
   
 
-  
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
   
 </div>
 
@@ -310,15 +300,23 @@
   <section id="id1">
 <h1>1<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <p><strong>在 BC 省驾驶的法定酒精限制是多少？</strong></p>
-<div id="q1" class="quiz" data-correct-answer="0.08%">
-    <button onclick="checkAnswer('q1', '0.05%')">0.05%</button>
-    <button onclick="checkAnswer('q1', '0.08%')">0.08%</button>
-    <button onclick="checkAnswer('q1', '0.10%')">0.10%</button>
-    <button onclick="checkAnswer('q1', '零容忍')">零容忍</button>
+<div id="q1" class="quiz">
+    <div class="option" id="q1-A" onclick="selectOption('q1', 'A', false)">
+        A. 0.05%
+    </div>
+    <div class="option" id="q1-B" onclick="selectOption('q1', 'B', true)">
+        B. 0.08%
+    </div>
+    <div class="option" id="q1-C" onclick="selectOption('q1', 'C', false)">
+        C. 0.10%
+    </div>
+    <div class="option" id="q1-D" onclick="selectOption('q1', 'D', false)">
+        D. 零容忍
+    </div>
     <p id="q1-result" class="result"></p>
 </div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">Explanation</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">点击查看答案解析</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">在 BC 省驾驶的法定酒精限制是 0.08%，但在更低水平下仍可能受到处罚。</p>
 </div>
 </details><div class="nav-buttons single-next">
@@ -359,21 +357,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../../_sources/driver_test/ca/bc/q1.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> 显示源代码
-    </a>
-  </div>
-</div>
-
-</div></div>
               
             
           </div>

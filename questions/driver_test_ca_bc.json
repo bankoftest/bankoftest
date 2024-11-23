@@ -15,7 +15,8 @@
             "options": ["1 秒", "2 秒", "3 秒", "4 秒"],
             "answer": "2 秒",
             "explanation": "在理想条件下，BC 省驾驶的最低跟车距离是 2 秒。",
-            "meta_keywords": "BC驾照考试, 跟车距离, BC驾驶考试"
+            "meta_keywords": "BC驾照考试, 跟车距离, BC驾驶考试",
+            "image": "2.jpg"
         },
         {
             "id": 3,

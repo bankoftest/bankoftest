@@ -9,16 +9,24 @@
 
 .. raw:: html
 
-   <div id="q1" class="quiz" data-correct-answer="0.08%">
-       <button onclick="checkAnswer('q1', '0.05%')">0.05%</button>
-       <button onclick="checkAnswer('q1', '0.08%')">0.08%</button>
-       <button onclick="checkAnswer('q1', '0.10%')">0.10%</button>
-       <button onclick="checkAnswer('q1', '零容忍')">零容忍</button>
+   <div id="q1" class="quiz">
+       <div class="option" id="q1-A" onclick="selectOption('q1', 'A', false)">
+           A. 0.05%
+       </div>
+       <div class="option" id="q1-B" onclick="selectOption('q1', 'B', true)">
+           B. 0.08%
+       </div>
+       <div class="option" id="q1-C" onclick="selectOption('q1', 'C', false)">
+           C. 0.10%
+       </div>
+       <div class="option" id="q1-D" onclick="selectOption('q1', 'D', false)">
+           D. 零容忍
+       </div>
        <p id="q1-result" class="result"></p>
    </div>
 
 
-.. dropdown:: Explanation
+.. dropdown:: 点击查看答案解析
 
    在 BC 省驾驶的法定酒精限制是 0.08%，但在更低水平下仍可能受到处罚。
 

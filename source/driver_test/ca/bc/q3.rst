@@ -9,16 +9,24 @@
 
 .. raw:: html
 
-   <div id="q3" class="quiz" data-correct-answer="80 km/h">
-       <button onclick="checkAnswer('q3', '50 km/h')">50 km/h</button>
-       <button onclick="checkAnswer('q3', '60 km/h')">60 km/h</button>
-       <button onclick="checkAnswer('q3', '70 km/h')">70 km/h</button>
-       <button onclick="checkAnswer('q3', '80 km/h')">80 km/h</button>
+   <div id="q3" class="quiz">
+       <div class="option" id="q3-A" onclick="selectOption('q3', 'A', false)">
+           A. 50 km/h
+       </div>
+       <div class="option" id="q3-B" onclick="selectOption('q3', 'B', false)">
+           B. 60 km/h
+       </div>
+       <div class="option" id="q3-C" onclick="selectOption('q3', 'C', false)">
+           C. 70 km/h
+       </div>
+       <div class="option" id="q3-D" onclick="selectOption('q3', 'D', true)">
+           D. 80 km/h
+       </div>
        <p id="q3-result" class="result"></p>
    </div>
 
 
-.. dropdown:: Explanation
+.. dropdown:: 点击查看答案解析
 
    在 BC 省驾驶的最高速度限制是 80 km/h。
 
