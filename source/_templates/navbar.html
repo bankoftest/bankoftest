@@ -1,0 +1,7 @@
+{% extends "pydata_sphinx_theme/navbar.html" %}
+
+{% block navbar %}
+{% if "driver_test/ca/bc/" not in current_page and "some_other_section/" not in current_page %}
+    {{ super() }}  <!-- Render the default navbar -->
+{% endif %}
+{% endblock %}

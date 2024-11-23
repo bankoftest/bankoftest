@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Bank Of Test'
+project = 'Bank of Test'
 copyright = '2024, bankoftest'
 author = 'bankoftest'
-release = '1.0'
+release = ''
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -39,16 +39,13 @@ html_theme_options = {
     "show_nav_level": 0,       # Sidebar navigation depth
     "navigation_depth": 1,     
     "secondary_sidebar_items": {
-        "driver_test/ca/bc": [],
-    },
-    "primary_sidebar_items": {
-        "driver_test/ca/bc": [],
+         "driver_test/ca/bc/**": [], 
     },
     "collapse_navigation": True,
 }
 
 html_sidebars = {
-  "driver_test/ca/bc": [],
+  "driver_test/ca/bc/**": [], 
 }
 
 # Set paths for custom static files

@@ -1,3 +1,9 @@
+.. raw:: html
+
+   <div class="test-name">加拿大BC驾照考试笔试全真模拟题2024版</div>
+
+   <hr>
+
 .. meta::
    :description: 在 BC 省驾驶的最高速度限制是多少？
    :keywords: BC驾照考试, 速度限制, BC驾驶考试
@@ -5,7 +11,7 @@
 3
 ==
 
-**在 BC 省驾驶的最高速度限制是多少？**
+**• 在 BC 省驾驶的最高速度限制是多少？**
 
 .. raw:: html
 
@@ -34,5 +40,6 @@
 
    <div class="nav-buttons">
        <a href="q2.html" class="button">上一题</a>
+       <span class="page-indicator">3 / 3</span>
    </div>
 

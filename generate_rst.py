@@ -7,7 +7,7 @@ output_dir = "source/driver_test/ca/bc"
 image_dir = "../images/driver_test/ca/bc"
 
 # Function to write a single question to an `.rst` file
-def write_question_rst(question, output_dir, total_questions, language):
+def write_question_rst(question, output_dir, total_questions, language, title):
     question_id = f"q{question['id']}"  # Unique ID for the question
     filename = f"{question_id}.rst"
     filepath = os.path.join(output_dir, filename)
@@ -26,6 +26,11 @@ def write_question_rst(question, output_dir, total_questions, language):
 
     # Write question content
     with open(filepath, "w", encoding="utf-8") as f:
+        # Add the test title as a heading
+        f.write(".. raw:: html\n\n")
+        f.write(f"   <div class=\"test-name\">{title}</div>\n\n")
+        f.write("   <hr>\n\n") 
+
         # Write meta information for SEO
         write_meta(f, question['question'], question.get("meta_keywords", ""))  # Use question for description
 
@@ -34,13 +39,14 @@ def write_question_rst(question, output_dir, total_questions, language):
         write_title(f, question_number)
 
         # Write question in bold
-        f.write(f"**{question['question']}**\n\n")
+        f.write(f"**• {question['question']}**\n\n")
+
 
         # Add image if available
         if "image" in question:
             image_path = os.path.join(image_dir, question['image'])
             f.write(f".. image:: /{image_path}\n")
-            f.write("   :width: 60%\n")
+            f.write("   :width: 80%\n")
             f.write("   :alt: Image for the question\n")
             f.write("   :align: center\n")  # Aligns the image in the center
             f.write("\n")  # Adds a blank line after the image block
@@ -61,9 +67,15 @@ def write_question_rst(question, output_dir, total_questions, language):
 
         if prev_question:
             f.write(f"       <a href=\"{prev_question}.html\" class=\"button\">{prev_text}</a>\n")
+
+        # Add the page indicator
+        f.write(f"       <span class=\"page-indicator\">{question['id']} / {total_questions}</span>\n")
+
         if next_question:
             f.write(f"       <a href=\"{next_question}.html\" class=\"button\">{next_text}</a>\n")
+
         f.write("   </div>\n\n")
+
 
 
 # Function to write meta information for SEO
@@ -133,7 +145,7 @@ def main():
 
     # Generate `.rst` files for each question
     for question in questions:
-        write_question_rst(question, output_dir, total_questions, language)  # Pass language here
+        write_question_rst(question, output_dir, total_questions, language, title)  # Pass language here
 
     # Update the toctree in the index.rst file with the title
     update_toctree(title, questions, output_dir)

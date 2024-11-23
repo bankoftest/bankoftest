@@ -1,3 +1,9 @@
+.. raw:: html
+
+   <div class="test-name">加拿大BC驾照考试笔试全真模拟题2024版</div>
+
+   <hr>
+
 .. meta::
    :description: 在 BC 省驾驶的最低跟车距离是多少？
    :keywords: BC驾照考试, 跟车距离, BC驾驶考试
@@ -5,10 +11,10 @@
 2
 ==
 
-**在 BC 省驾驶的最低跟车距离是多少？**
+**• 在 BC 省驾驶的最低跟车距离是多少？**
 
 .. image:: /../images/driver_test/ca/bc/2.jpg
-   :width: 60%
+   :width: 80%
    :alt: Image for the question
    :align: center
 
@@ -39,6 +45,7 @@
 
    <div class="nav-buttons">
        <a href="q1.html" class="button">上一题</a>
+       <span class="page-indicator">2 / 3</span>
        <a href="q3.html" class="button">下一题</a>
    </div>
 
