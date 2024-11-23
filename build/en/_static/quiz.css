@@ -1,0 +1,44 @@
+.quiz button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz button:hover {
+    background-color: #eee;
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-buttons a.button {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav-buttons a.button:hover {
+    background-color: #0056b3;
+}
+
+/* For the first question: center "Next Question" button */
+.nav-buttons.single-next {
+    justify-content: flex-end; /* Push button to the right */
+}
+

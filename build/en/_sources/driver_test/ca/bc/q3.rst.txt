@@ -1,0 +1,30 @@
+.. meta::
+   :description: 在 BC 省驾驶的最高速度限制是多少？
+   :keywords: BC驾照考试, 速度限制, BC驾驶考试
+
+3
+==
+
+**在 BC 省驾驶的最高速度限制是多少？**
+
+.. raw:: html
+
+   <div id="q3" class="quiz" data-correct-answer="80 km/h">
+       <button onclick="checkAnswer('q3', '50 km/h')">50 km/h</button>
+       <button onclick="checkAnswer('q3', '60 km/h')">60 km/h</button>
+       <button onclick="checkAnswer('q3', '70 km/h')">70 km/h</button>
+       <button onclick="checkAnswer('q3', '80 km/h')">80 km/h</button>
+       <p id="q3-result" class="result"></p>
+   </div>
+
+
+.. dropdown:: Explanation
+
+   在 BC 省驾驶的最高速度限制是 80 km/h。
+
+.. raw:: html
+
+   <div class="nav-buttons">
+       <a href="q2.html" class="button">上一题</a>
+   </div>
+

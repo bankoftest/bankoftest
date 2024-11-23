@@ -1,0 +1,30 @@
+.. meta::
+   :description: 在 BC 省驾驶的法定酒精限制是多少？
+   :keywords: BC驾照考试, 酒精限制, BC驾驶考试
+
+1
+==
+
+**在 BC 省驾驶的法定酒精限制是多少？**
+
+.. raw:: html
+
+   <div id="q1" class="quiz" data-correct-answer="0.08%">
+       <button onclick="checkAnswer('q1', '0.05%')">0.05%</button>
+       <button onclick="checkAnswer('q1', '0.08%')">0.08%</button>
+       <button onclick="checkAnswer('q1', '0.10%')">0.10%</button>
+       <button onclick="checkAnswer('q1', '零容忍')">零容忍</button>
+       <p id="q1-result" class="result"></p>
+   </div>
+
+
+.. dropdown:: Explanation
+
+   在 BC 省驾驶的法定酒精限制是 0.08%，但在更低水平下仍可能受到处罚。
+
+.. raw:: html
+
+   <div class="nav-buttons single-next">
+       <a href="q2.html" class="button">下一题</a>
+   </div>
+

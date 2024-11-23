@@ -1,0 +1,29 @@
+{
+    "title": "BC驾照考试",
+    "questions": [
+        {
+            "id": 1,
+            "question": "在 BC 省驾驶的法定酒精限制是多少？",
+            "options": ["0.05%", "0.08%", "0.10%", "零容忍"],
+            "answer": "0.08%",
+            "explanation": "在 BC 省驾驶的法定酒精限制是 0.08%，但在更低水平下仍可能受到处罚。",
+            "meta_keywords": "BC驾照考试, 酒精限制, BC驾驶考试"
+        },
+        {
+            "id": 2,
+            "question": "在 BC 省驾驶的最低跟车距离是多少？",
+            "options": ["1 秒", "2 秒", "3 秒", "4 秒"],
+            "answer": "2 秒",
+            "explanation": "在理想条件下，BC 省驾驶的最低跟车距离是 2 秒。",
+            "meta_keywords": "BC驾照考试, 跟车距离, BC驾驶考试"
+        },
+        {
+            "id": 3,
+            "question": "在 BC 省驾驶的最高速度限制是多少？",
+            "options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+            "answer": "80 km/h",
+            "explanation": "在 BC 省驾驶的最高速度限制是 80 km/h。",
+            "meta_keywords": "BC驾照考试, 速度限制, BC驾驶考试"
+        }
+    ]
+}
